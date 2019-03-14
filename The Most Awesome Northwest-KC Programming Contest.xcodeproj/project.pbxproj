@@ -8,22 +8,34 @@
 
 /* Begin PBXBuildFile section */
 		37140E35223ABF0100945CEB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37140E34223ABF0100945CEB /* AppDelegate.swift */; };
-		37140E37223ABF0100945CEB /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37140E36223ABF0100945CEB /* FirstViewController.swift */; };
-		37140E39223ABF0100945CEB /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37140E38223ABF0100945CEB /* SecondViewController.swift */; };
+		37140E37223ABF0100945CEB /* NewSchoolViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37140E36223ABF0100945CEB /* NewSchoolViewController.swift */; };
+		37140E39223ABF0100945CEB /* NewTeamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37140E38223ABF0100945CEB /* NewTeamViewController.swift */; };
 		37140E3C223ABF0100945CEB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37140E3A223ABF0100945CEB /* Main.storyboard */; };
 		37140E3E223ABF0200945CEB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37140E3D223ABF0200945CEB /* Assets.xcassets */; };
 		37140E41223ABF0200945CEB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37140E3F223ABF0200945CEB /* LaunchScreen.storyboard */; };
+		37140E49223AC03B00945CEB /* SchoolsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37140E48223AC03B00945CEB /* SchoolsTableViewController.swift */; };
+		37140E4B223AC78D00945CEB /* TeamsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37140E4A223AC78D00945CEB /* TeamsTableViewController.swift */; };
+		37140E4D223AC83100945CEB /* StudentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37140E4C223AC83100945CEB /* StudentsViewController.swift */; };
+		37140E4F223ACC5200945CEB /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37140E4E223ACC5200945CEB /* Team.swift */; };
+		37140E51223ACF6800945CEB /* School.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37140E50223ACF6800945CEB /* School.swift */; };
+		37140E53223AD33600945CEB /* Schools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37140E52223AD33600945CEB /* Schools.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		37140E31223ABF0100945CEB /* The Most Awesome Northwest-KC Programming Contest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "The Most Awesome Northwest-KC Programming Contest.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		37140E34223ABF0100945CEB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		37140E36223ABF0100945CEB /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		37140E38223ABF0100945CEB /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		37140E36223ABF0100945CEB /* NewSchoolViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewSchoolViewController.swift; sourceTree = "<group>"; };
+		37140E38223ABF0100945CEB /* NewTeamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTeamViewController.swift; sourceTree = "<group>"; };
 		37140E3B223ABF0100945CEB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		37140E3D223ABF0200945CEB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		37140E40223ABF0200945CEB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		37140E42223ABF0200945CEB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		37140E48223AC03B00945CEB /* SchoolsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolsTableViewController.swift; sourceTree = "<group>"; };
+		37140E4A223AC78D00945CEB /* TeamsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsTableViewController.swift; sourceTree = "<group>"; };
+		37140E4C223AC83100945CEB /* StudentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentsViewController.swift; sourceTree = "<group>"; };
+		37140E4E223ACC5200945CEB /* Team.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
+		37140E50223ACF6800945CEB /* School.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = School.swift; sourceTree = "<group>"; };
+		37140E52223AD33600945CEB /* Schools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Schools.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,8 +69,14 @@
 			isa = PBXGroup;
 			children = (
 				37140E34223ABF0100945CEB /* AppDelegate.swift */,
-				37140E36223ABF0100945CEB /* FirstViewController.swift */,
-				37140E38223ABF0100945CEB /* SecondViewController.swift */,
+				37140E48223AC03B00945CEB /* SchoolsTableViewController.swift */,
+				37140E4E223ACC5200945CEB /* Team.swift */,
+				37140E50223ACF6800945CEB /* School.swift */,
+				37140E52223AD33600945CEB /* Schools.swift */,
+				37140E4A223AC78D00945CEB /* TeamsTableViewController.swift */,
+				37140E36223ABF0100945CEB /* NewSchoolViewController.swift */,
+				37140E38223ABF0100945CEB /* NewTeamViewController.swift */,
+				37140E4C223AC83100945CEB /* StudentsViewController.swift */,
 				37140E3A223ABF0100945CEB /* Main.storyboard */,
 				37140E3D223ABF0200945CEB /* Assets.xcassets */,
 				37140E3F223ABF0200945CEB /* LaunchScreen.storyboard */,
@@ -138,9 +156,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				37140E39223ABF0100945CEB /* SecondViewController.swift in Sources */,
+				37140E39223ABF0100945CEB /* NewTeamViewController.swift in Sources */,
 				37140E35223ABF0100945CEB /* AppDelegate.swift in Sources */,
-				37140E37223ABF0100945CEB /* FirstViewController.swift in Sources */,
+				37140E4F223ACC5200945CEB /* Team.swift in Sources */,
+				37140E4D223AC83100945CEB /* StudentsViewController.swift in Sources */,
+				37140E53223AD33600945CEB /* Schools.swift in Sources */,
+				37140E4B223AC78D00945CEB /* TeamsTableViewController.swift in Sources */,
+				37140E49223AC03B00945CEB /* SchoolsTableViewController.swift in Sources */,
+				37140E37223ABF0100945CEB /* NewSchoolViewController.swift in Sources */,
+				37140E51223ACF6800945CEB /* School.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
