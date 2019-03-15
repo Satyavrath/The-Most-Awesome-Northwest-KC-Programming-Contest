@@ -14,10 +14,7 @@ class NewSchoolViewController: UIViewController {
     @IBOutlet weak var coachTF: UITextField!
     
     let newschool = Schools.shared
-    
-   
-    
-    
+ 
     @IBAction func done(_ sender: Any) {
         let name = nameTF.text!
         let coach = coachTF.text!

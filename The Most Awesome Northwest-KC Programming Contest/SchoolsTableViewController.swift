@@ -33,13 +33,11 @@ class SchoolsTableViewController: UITableViewController {
         return Schools.shared.numSchools()
     }
 
-    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "schoolname", for: indexPath)
 
         cell.textLabel?.text = Schools.shared[indexPath.row].name
         cell.detailTextLabel?.text = Schools.shared[indexPath.row].coach
-
         return cell
     }
     
@@ -60,17 +58,17 @@ class SchoolsTableViewController: UITableViewController {
     }
     */
 
-    /*
+   /*
     // Override to support editing the table view.
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
-            // Delete the row from the data source
+            Schools.delete(school: <#T##Schools#>)
             tableView.deleteRows(at: [indexPath], with: .fade)
         } else if editingStyle == .insert {
             // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
         }    
     }
-    */
+  */
 
     /*
     // Override to support rearranging the table view.
@@ -97,8 +95,8 @@ class SchoolsTableViewController: UITableViewController {
      if segue.identifier == "sname" {
      let schoolnameTVC = segue.destination as! TeamsTableViewController
      schoolnameTVC.schoolName = Schools.shared[tableView.indexPathForSelectedRow!.row]
+      }
     }
-   }
 }
 
     

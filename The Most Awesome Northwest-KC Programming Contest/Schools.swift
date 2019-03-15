@@ -14,8 +14,6 @@ class Schools {
     private var schools:[School] = [School(name: "Platte County High School",coach: "Sarah Jones",teams: [Team(name: "Tonka0",students: ["Dagget","Rogers","Vaughan"]),Team(name: "Tonka1",students: ["Micheal","Hoot","Charles"])]),
                                    School(name: "Ozark High School",coach: "Steve Anderson",teams: [Team(name: "OHS0",students: ["Ram","Rahim","Robert"]),Team(name: "OHS2",students: ["Charan","Chaitu","Chintu"])]),
                                    School(name: "Winnetonka High School",coach: "Bradley Meeks",teams: [Team(name: "WHS0",students: ["Bunty","Chanti","Manti"]),Team(name: "WHS1",students: ["Rajamouli","Sukumar","Varma"])])]
-    
-    
     func numSchools() -> Int{
         return schools.count
     }
@@ -34,6 +32,5 @@ class Schools {
                 break
             }
         }
-        
     }
 }
