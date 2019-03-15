@@ -10,7 +10,7 @@ import UIKit
 
 class StudentsViewController: UIViewController {
     
-    var stuName : Team!
+    var teamName : Team!
     
     @IBOutlet weak var stu0LBL: UILabel!
     
@@ -24,10 +24,10 @@ class StudentsViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     override func viewWillAppear(_ animated: Bool) {
-        navigationItem.title = stuName.name
-        stu0LBL.text = "\(stuName.students[0])"
-        stu1LBL.text = "\(stuName.students[1])"
-        stu2LBL.text = "\(stuName.students[2])"
+        navigationItem.title = teamName.name
+        stu0LBL.text = "\(teamName.students[0])"
+        stu1LBL.text = "\(teamName.students[1])"
+        stu2LBL.text = "\(teamName.students[2])"
     }
 
     /*

@@ -10,7 +10,7 @@ import UIKit
 
 class SchoolsTableViewController: UITableViewController {
 
-    var teamSelect : Team!
+//    var schoolName : School!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -48,11 +48,8 @@ class SchoolsTableViewController: UITableViewController {
     }
     
 //    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-////        teamSelect.name = teamSelect[indexPath.row]
 //
-//    if segue.identifier == "schoolname" {
-//    let schoolnameTVC = segue.destination as! TeamsTableViewController
-//    schoolnameTVC.restaurant = Restaurants.shared[tableView.indexPathForSelectedRow!.row]
+//
 //    }
 
     /*
@@ -90,14 +87,19 @@ class SchoolsTableViewController: UITableViewController {
     }
     */
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
+     if segue.identifier == "sname" {
+     let schoolnameTVC = segue.destination as! TeamsTableViewController
+     schoolnameTVC.schoolName = Schools.shared[tableView.indexPathForSelectedRow!.row]
     }
-    */
-
+   }
 }
+
+    
+

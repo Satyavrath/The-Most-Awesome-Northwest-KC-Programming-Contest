@@ -8,7 +8,7 @@
 
 import Foundation
 class Team: CustomStringConvertible{
-    var name : String?
+    var name : String
     var students : [String]
     init(name:String, students: [String]) {
         self.name = name
@@ -16,7 +16,7 @@ class Team: CustomStringConvertible{
     }
     
     var description :String {
-        return "Name: \(name ?? "")"
+        return "Name: \(name )"
     }
 }
 

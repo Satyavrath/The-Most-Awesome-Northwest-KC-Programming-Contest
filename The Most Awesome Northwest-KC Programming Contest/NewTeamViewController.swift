@@ -15,7 +15,7 @@ class NewTeamViewController: UIViewController {
     @IBOutlet weak var student1TF: UITextField!
     @IBOutlet weak var student2TF: UITextField!
 
-    var schoolTeam: School!
+    var newschoolTeam: School!
 
     @IBAction func done(_ sender: Any) {
         let tName = teamNameTF.text!
@@ -23,7 +23,7 @@ class NewTeamViewController: UIViewController {
         let student1 = student1TF.text!
         let student2 = student2TF.text!
         
-        schoolTeam.addTeam(team:Team(name: tName, students: [student0,student1,student2]))
+        newschoolTeam.addTeam(team:Team(name: tName, students: [student0,student1,student2]))
         
         self.dismiss(animated: true, completion: nil) // instead of using an unwind segue
     }

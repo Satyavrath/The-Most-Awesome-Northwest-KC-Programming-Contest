@@ -8,19 +8,19 @@
 
 import Foundation
 class School :CustomStringConvertible {
-    var name: String?
-    var coach: String?
+    var name: String
+    var coach: String
     var teams: [Team]
     var description :String {
-        return "Name: \(name ?? ""), Coach:\(coach ?? "")"
+        return "Name: \(name), Coach:\(coach)"
     }
-    init(name: String?, coach: String?, teams:[Team]){
+    init(name: String, coach: String, teams:[Team]){
         self.name = name
         self.coach = coach
         self.teams = teams
         
     }
-    convenience init(name: String?, coach: String?){
+    convenience init(name: String, coach: String){
         self.init(name:name, coach:coach, teams:[])
     }
     func addTeam(team:Team){
